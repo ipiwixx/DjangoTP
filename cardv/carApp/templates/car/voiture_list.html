@@ -8,7 +8,7 @@
  <h1>Voiture list</h1>
 <ul>
     {% for voiture in voitures %}
-        <li>{{ voiture.marque }} - {{ voiture.modele }} - [{{ voiture.cylindree }}]</li>
+        <a href="../voiture/{{ voiture.id }}/"><li>{{ voiture.marque }} - {{ voiture.modele }} - [{{ voiture.cylindree }}]</li></a>
     {% endfor %}
 </ul>
 
