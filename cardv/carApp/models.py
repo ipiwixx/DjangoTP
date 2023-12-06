@@ -6,3 +6,7 @@ class Voiture(models.Model):
     anneeConstruction = models.DateTimeField()
     cylindree = models.IntegerField()
     version = models.CharField(max_length=200)
+    #note = models.IntegerField()
+
+    def __str__(self):
+        return self.marque

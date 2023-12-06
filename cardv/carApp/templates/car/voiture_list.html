@@ -5,6 +5,13 @@
     <title>Voiture liste</title>
 </head>
 <body>
+ <h1>Voiture list</h1>
+<ul>
+    {% for voiture in voitures %}
+        <li>{{ voiture.marque }} - {{ voiture.modele }} - [{{ voiture.cylindree }}]</li>
+    {% endfor %}
+</ul>
+
 
 </body>
 </html>
